@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Weather Dashboard</title>
+        <!--This connects to the CSS stylesheet-->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Here is the banner to the Weather Dashboard. -->
+        <p class="banner">🌩 Weather Dashboard 🌩</p>
+        <!--This is the search component that looks for input. -->
+        <div class="search-component">
+            <input type="text" autocomplete="off" class="text-search" placeholder="Enter the city name...">
+            <input type="button" class="button-search" value="Search"> 
+        </div>
+        <nav id= "search-history"></nav>
+        <!--This shows the daily forecast by hooking into the JavaScript-->
+        <div class="daily-forecast"><p>&nbsp;&nbsp;Daily Forecast</p></div>
+        <div class="weather-box" id="weather-box"></div>
+        <div class="five-day-forecast"><p>&nbsp;&nbsp;Five Day Forecast</p></div>
+        <!--The five-day-container is used to display weather information. -->
+        <div id="five-day-container" class="main-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!--This connects to the JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>

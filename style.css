@@ -1,0 +1,113 @@
+/* This styles the body of the page and changes the background image to japanese clouds */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    height: 100vh;
+    background-color:silver;
+    background-image:
+        radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+        radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+}
+/*This changes the banner */
+body .banner {
+    border-bottom: thick solid blueviolet; 
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    background-color: black;
+    padding: 35px;
+    margin: auto;
+
+}
+
+/*This changes the search component. */
+.main-container, .search-component{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 2em;
+}
+
+.main-container {
+    justify-content: space-around;
+}
+/*This changes the text of the search component */
+.text-search {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: solid blueviolet;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+.button-search {
+    font-size: 24px;
+}
+
+/*This changes the daily forecast box stylings. */
+.daily-forecast {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: thick;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 15px;
+    margin-left: 450px;
+    margin-right: auto;
+}
+
+/*This changes the five day forecasts box stylings */
+.five-day-forecast {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: thick;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 15px;
+    margin-top: 200px;
+    margin-left: 450px;
+    margin-right: auto;
+}
+/* This changes the five day container used to hold the 5 day forecast. */
+#five-day-container {
+    margin-bottom: 200px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    margin-right: 0px;
+    margin-left: 450px;
+}
+
+/*This changes the weather box's stylings */
+#weather-box {
+    position: relative;
+    margin-left: 450px;
+    background-color: black;
+    color: white;
+}
+
+/*This allows the search history to be absolute*/
+#search-history {
+    position: absolute;
+}
+
+/*This changes the history buttons from the search history*/
+.historyButton {
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    margin-bottom:15px;
+}

@@ -34,7 +34,7 @@ body .banner {
     justify-content: left;
     margin: 2em;
 }
-
+/* This aligns items in the main container */
 .main-container {
     justify-content: space-around;
 }

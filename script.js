@@ -1,6 +1,6 @@
 //This is the key used with the api.
 const key = '0f9ca65301e786e31087ed440e5d77bc';
-
+//These are variables that hook into the html and set the search history as an array and the city as an empty string.
 let todaysData = null;
 var forecastContainer = document.getElementById("five-day-container");
 var weatherBox = document.getElementById("weather-box");

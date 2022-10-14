@@ -94,11 +94,12 @@ function cityGeocoding(city) {
         //console.log(parsedGeoJson);
         weatherForecast(city, data[0].lat, data[0].lon);
     })
+//This catches any errors and shows it on the console log.     
     .catch(error => {
         console.log(error);
     });
 }
-//This fetches the 5 day forecast data of a city when passed its latitude and longitude and it's key. 
+//This fetches the 5 day forecast data of a city when passed it's latitude and longitude and it's key. 
 function weatherForecast(city, lat, lon){
     console.log("calledWeatherForecast")
     fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`)

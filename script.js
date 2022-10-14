@@ -110,6 +110,7 @@ function weatherForecast(city, lat, lon){
         //console.log(parsedJson);
         handleWeatherData(data);
     })
+//This catches any errors and shows it on the console log.
     .catch(error => {
         console.log(error);
     });

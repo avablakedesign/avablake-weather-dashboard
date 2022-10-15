@@ -15,7 +15,7 @@ body {
         radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
     background-size: 100px 50px;
 }
-/*This changes the banner */
+/*This changes the banners stylings and aligns the text */
 body .banner {
     border-bottom: thick solid blueviolet; 
     text-align: center;
@@ -27,7 +27,7 @@ body .banner {
 
 }
 
-/*This changes the search component. */
+/*This changes the search component nd makes it flexible. */
 .main-container, .search-component{
     display: flex;
     align-items: left;
